@@ -1,0 +1,81 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.example.constanta"
+        minSdk 26
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BASE_URL", '"https://raw.githubusercontent.com/constanta-android-dev/intership-wellcome-task/"'
+        }
+        debug {
+            buildConfigField "String", "BASE_URL", '"https://raw.githubusercontent.com/constanta-android-dev/intership-wellcome-task/"'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    def koin_version= "3.1.2"
+    def lifecycle_version = "2.6.0-alpha01"
+
+    implementation project(path: ':domain')
+    implementation project(path: ':data')
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    // TIMBER
+    implementation 'com.jakewharton.timber:timber:5.0.1'
+
+    // KOIN
+    // Koin Core features
+    implementation "io.insert-koin:koin-core:$koin_version"
+    // Koin Test features
+    testImplementation "io.insert-koin:koin-test:$koin_version"
+    // Koin main features for Android
+    implementation "io.insert-koin:koin-android:$koin_version"
+    implementation "io.insert-koin:koin-android-compat:$koin_version"
+
+    //VIEW MODEL
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.core:core-ktx:1.8.0"
+
+    // CARDVIEW
+    implementation "androidx.cardview:cardview:1.0.0"
+
+    //RECYCLER VIEW
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
+    //GLIDE
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+
+    // RETROFIT
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.google.code.gson:gson:2.9.0'
+}
