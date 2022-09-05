@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Constanta/app/src/main/res/drawable/animated_gradient.xml" value="0.267" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Constanta/app/src/main/res/drawable/gradient_1.xml" value="0.2825" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Constanta/app/src/main/res/drawable/gradient_2.xml" value="0.2825" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/Constanta/app/src/main/res/drawable/gradient_3.xml" value="0.2825" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/Constanta/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1995" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/Constanta/app/src/main/res/layout/activity_main.xml" value="0.18659420289855072" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/Constanta/app/src/main/res/layout/fragment_films_list.xml" value="0.4" />

@@ -20,10 +20,10 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "BASE_URL", '"https://raw.githubusercontent.com/constanta-android-dev/intership-wellcome-task/"'
+            buildConfigField "String", "BASE_URL", '"https://hidden-sun-2260.getsandbox.com"'
         }
         debug {
-            buildConfigField "String", "BASE_URL", '"https://raw.githubusercontent.com/constanta-android-dev/intership-wellcome-task/"'
+            buildConfigField "String", "BASE_URL", '"https://hidden-sun-2260.getsandbox.com"'
         }
     }
     compileOptions {

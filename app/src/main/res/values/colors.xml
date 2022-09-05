@@ -9,4 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="my_pink">#F28CD6</color>
     <color name="light_pink">#F5E3F0</color>
+
+    // for gradient background
+    <color name="azure">#ef32d9</color>
+    <color name="lazure">#4286f4</color>
+    <color name="dark_azure">#cb3066</color>
 </resources>

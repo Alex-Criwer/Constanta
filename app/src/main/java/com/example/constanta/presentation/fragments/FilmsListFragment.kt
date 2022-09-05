@@ -17,6 +17,7 @@ import com.example.constanta.presentation.rv.FilmItemDecoration
 import com.example.constanta.presentation.rv.FilmListAdapter
 import com.example.constanta.presentation.viewmodel.FilmListViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
+import timber.log.Timber
 
 
 class FilmsListFragment : Fragment(), FilmClickListener {
@@ -29,6 +30,7 @@ class FilmsListFragment : Fragment(), FilmClickListener {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        Timber.d("a onCreateView in FilmsListFragment")
         return inflater.inflate(R.layout.fragment_films_list, container, false)
     }
 
